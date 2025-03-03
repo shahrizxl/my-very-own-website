@@ -129,20 +129,6 @@ header nav ul li a {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.profile-img {
-  width: 150px;  /* Adjust size as needed */
-  height: 150px;
-  border-radius: 50%; /* Makes the image circular */
-  border: 5px solid #333; /* Adds a border */
-  object-fit: cover; /* Ensures image doesn't get distorted */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a nice shadow */
-  transition: transform 0.3s ease-in-out; /* Smooth hover effect */
-}
-
-.profile-img:hover {
-  transform: scale(1.1); /* Slight zoom-in effect on hover */
-}
-
 /* Contact Section */
 #contact {
   background: #fff;
@@ -200,6 +186,20 @@ footer .social-links a:hover {
   color: #3498db;
 }
 
+.profile-img {
+  width: 150px;  /* Adjust size as needed */
+  height: 150px;
+  border-radius: 50%; /* Makes the image circular */
+  border: 5px solid #333; /* Adds a border */
+  object-fit: cover; /* Ensures image doesn't get distorted */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a nice shadow */
+  transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+.profile-img:hover {
+  transform: scale(1.1); /* Slight zoom-in effect on hover */
+}
+
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
   .about-content {
@@ -207,7 +207,6 @@ footer .social-links a:hover {
     text-align: center;
   }
 
-  
   .skills-grid, .projects-grid {
     grid-template-columns: 1fr;
   }
