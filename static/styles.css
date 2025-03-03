@@ -194,16 +194,14 @@ footer .social-links a:hover {
   }
 
   .profile-img {
-    width: 200px; /* Slightly larger size for better visibility */
-    height: 200px; /* Ensures equal width and height */
+    width: 150px; /* Reduced size */
+    height: 150px; /* Ensures equal width and height */
     border-radius: 50%; /* Makes it a circle */
     object-fit: cover; /* Ensures the image is properly fitted */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Optional: adds a nice shadow */
-    border: 5px solid #3498db; /* Optional: adds a colored border */
+    border: 3px solid #3498db; /* Optional: adds a colored border */
   }
   
-
-
   .skills-grid, .projects-grid {
     grid-template-columns: 1fr;
   }
