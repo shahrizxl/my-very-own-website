@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section id="about" class="container">
+    <h2>About Me</h2>
+    <div class="about-content">
+        <img src="{{ url_for('static', filename='profile.jpg') }}" alt="Shahrizal Samsudeen" class="profile-img">
+        <p>
+          Hi, I'm Shahrizal Samsudeen, An enthusiastic second-year computer science student eager to expand his knowledge of data science, machine
+          learning, and data-driven decision-making. A fast learner and natural leader, consistently taking the initiative in
+          group projects and team collaborations. Strong foundation in Python, MySQL, and analytical problem-solving,
+          with a passion for extracting insights from data, optimizing algorithms, and applying statistical techniques to real-
+          world challenges. Quick to adapt and eager to contribute to the industry by leveraging data to drive innovation
+          and informed decision making.
+        </p>
+      </div>
+</section>
+{% endblock %}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shahrizal Samsudeen - Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Shahrizal Samsudeen</h1>
+            <p>Future Data Scientist | Currently a student | Creative Thinker</p>
+            <nav>
+                <ul>
+                    <li><a href="{{ url_for('home') }}">About</a></li>
+                    <li><a href="{{ url_for('skills') }}">Skills</a></li>
+                    <li><a href="{{ url_for('projects') }}">Projects</a></li>
+                    <li><a href="{{ url_for('events') }}">Events</a></li>
+                    <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Shahrizal Samsudeen. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://linkedin.com/in/shahrizxl" target="_blank">LinkedIn</a>
+                <a href="https://github.com/shahrizxl" target="_blank">GitHub</a>
+                <a href="https://wa.me/601151257919" target="_blank">Whatsapp</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
