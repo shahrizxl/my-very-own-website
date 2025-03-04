@@ -19,6 +19,10 @@ h1 {
   color: #ffffff;
 }
 
+h1 a:hover {
+  color: #ffffff;
+}
+
 h2 {
   margin-bottom: 20px;
   font-size: 2rem;
