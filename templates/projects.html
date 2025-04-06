@@ -1,28 +1,93 @@
 {% extends "base.html" %}
 
 {% block content %}
-<section id="events" class="container">
-    <h2>Projects</h2>
-    <div class="events-list">
-        <div class="event">
+<section id="projects" class="container">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects-list">
+        <div class="project">
             <h3>Trash and Treasure (Mini Shopee)</h3>
-            <p>Trash and Treasure (Mini Shopee) is a buying and selling platform that operates with four key roles: Customer, Admin, Courier, and Sponsor. The project functions similarly to an e-commerce website, facilitating seamless transactions between buyers and sellers while incorporating administrative and logistical support.</p>
+            <p>Developed a web-based marketplace for buying/selling second-hand items with user authentication, product listings, and a MySQL database. Built with Python, MySQL, HTML, and CSS as part of coursework.</p>
             <a href="https://github.com/shahrizxl/Software_Engineer" class="btn">View Project</a>
         </div>
-        <div class="event">
-            <h3>Rock Paper Scissor</h3>
-            <p>This Rock Paper Scissors game is a Flask-based web application where players compete against the computer by selecting Rock, Paper, or Scissors. The computer randomly picks its choice, and the winner is determined based on traditional game rules. Each round's results, including the player's choice, computer's choice, and outcome, are stored in a CSV file for future analysis. The game also provides statistical insights, such as the total number of times each choice was made, win/loss/draw counts, and percentage calculations. Flask handles the backend logic, while HTML and CSS are used for the frontend.</p>
+        <div class="project">
+            <h3>Rock Paper Scissors Game</h3>
+            <p>Created an interactive Python game with CSV-based score tracking and a simple web interface. Applied Python, HTML, and CSS to reinforce logic and front-end integration.</p>
             <a href="https://github.com/shahrizxl/rock_paper_scissor" class="btn">View Project</a>
         </div>
-        <div class="event">
+        <div class="project">
             <h3>CPU Scheduler System</h3>
-            <p>This project is a CPU Scheduling System built using Flask, which simulates different scheduling algorithms including Non-Preemptive, Preemptive, Round Robin, and Priority Non-Preemptive Scheduling. The system takes process details as input, applies the selected scheduling algorithm, and visualizes the execution order, turnaround time, and waiting time. It helps in understanding and comparing CPU scheduling techniques by displaying real-time results through a web-based interface. This project improved my skills in Flask, algorithm implementation, and data visualization.</p>
+            <p>Simulated CPU scheduling algorithms (SRT, SJF, NPP, Round Robin) with a Python-based visualization tool. Demonstrated process efficiency analysis for OS coursework. Built with Python, HTML, and CSS as part of coursework.</p>
             <a href="https://github.com/shahrizxl/OS_Assignment" class="btn">View Project</a>
         </div>
-        <div class="event">
+        <div class="project">
             <h3>Movie Recommender System</h3>
-            <a href="#" class="btn">Coming soon</a>
+            <p>Building a machine learning-based recommender using Pandas, NumPy, and Python to suggest movies based on user input. Built with Python, HTML, and CSS as part of coursework.</p>
+            <a href="https://github.com/shahrizxl/Movie_reco_system" class="btn">View Project</a>
         </div>
     </div>
 </section>
+
+<style>
+    /* General Section Styling */
+    .container {
+        margin: 0 auto;
+        padding: 20px;
+        max-width: 900px;
+    }
+
+    .section-title {
+        font-size: 2rem;
+        color: #333;
+        margin-bottom: 20px;
+        font-weight: bold;
+        border-bottom: 2px solid #007bff;
+        padding-bottom: 5px;
+    }
+
+    .projects-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+    }
+
+    .project {
+        background-color: #f9f9f9;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+    }
+
+    .project:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .project h3 {
+        font-size: 1.5rem;
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    .project p {
+        font-size: 1.1rem;
+        color: #555;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        margin-top: 15px;
+        background-color: #007BFF;
+        color: #fff;
+        text-align: center;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+        background-color: #0056b3;
+    }
+</style>
 {% endblock %}

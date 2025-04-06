@@ -80,11 +80,7 @@ header nav ul li a {
   font-weight: 600;
 }
 
-/* About Section */
-#about {
-  background: #fff;
-  padding: 40px 0;
-}
+
 
 .about-content {
   display: flex;
@@ -224,4 +220,64 @@ footer .social-links a:hover {
   .contact-form input, .contact-form textarea, .contact-form button {
     width: 100%;
   }
+
+
+      /* General Section Styling */
+      .container {
+        margin: 0 auto;
+        padding: 20px;
+        max-width: 900px;
+    }
+
+    .section-title {
+        font-size: 2rem;
+        color: #333;
+        margin-bottom: 20px;
+        font-weight: bold;
+        border-bottom: 2px solid #007bff;
+        padding-bottom: 5px;
+    }
+
+    .profile-img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 20px;
+    }
+
+    .skills-list, .projects-list, .achievement-list, .education-list, .experience-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+    }
+
+    .skill, .project, .achievement-item, .education-item, .experience-item {
+        background-color: #f9f9f9;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+    }
+
+    .skill:hover, .project:hover, .achievement-item:hover, .education-item:hover, .experience-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn-more {
+        display: inline-block;
+        padding: 10px 20px;
+        margin-top: 20px;
+        background-color: #007BFF;
+        color: #fff;
+        text-align: center;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn-more:hover {
+        background-color: #0056b3;
+    }
 }

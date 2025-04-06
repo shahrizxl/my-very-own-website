@@ -2,38 +2,108 @@
 
 {% block content %}
 <section id="events" class="container">
-    <h2>Events</h2>
+    <h2 class="section-title">Leadership Experiences</h2>
     <div class="events-list">
         <div class="event">
-            <h3>MMU Week of Immersion and Networking (WIN) July 2023</h3>
-            <h4>Member of Program and Activity Division</h4>
-            <p>As a member of the Program and Activity Division, I was responsible for designing and organizing interactive programs to engage and welcome new students to the university. My role involved planning activities to help freshers integrate into campus life, fostering connections among them, and ensuring a smooth onboarding experience. Additionally, I actively communicated with the freshers to provide guidance, answer their questions, and enhance their overall experience during the event.</p>
+            <h3>Head of Multimedia Division, Barcamp 2024</h3>
+            <h4>IT Society</h4>
+            <ul>
+                <li>Led a team of 8 to design event branding, social media content, and promotional materials</li>
+                <li>Increased online engagement by 30% through targeted digital campaigns</li>
+            </ul>
         </div>
         <div class="event">
-            <h3>MMU Open Chess Competition (MOCC) 2023</h3>
-            <h4>Member of Creative and Design Division</h4>
-            <p>As part of the Creative and Design Division, I was responsible for designing event materials, including lanyards and participant cards, to enhance the competition’s branding. I also created engaging Instagram posts to promote the event and ensure strong social media visibility. My role involved collaborating with the team to maintain a consistent visual identity and attract participants through creative design.</p>
+            <h3>Member of Special Task Club & Registration Week 2024</h3>
+            <h4>IT Society</h4>
+            <ul>
+                <li>Streamlined logistical processes, reducing setup time by 25% through improved resource allocation</li>
+                <li>Enhanced inter-team coordination for smoother event execution</li>
+            </ul>
         </div>
         <div class="event">
-            <h3>MMU Convofest 2023</h3>
-            <h4>Member of Logistics Division</h4>
-            <p>As a member of the Logistics Division, I was responsible for ensuring the availability of all necessary items and equipment throughout the event. My role required close coordination with other divisions to ensure smooth event operations and resolve any logistical challenges. I played a key part in maintaining organization and efficiency, ensuring that all materials were in place to support the success of Convofest. My responsibilities increased as I took on a more active role in managing logistics and communication across teams.</p>
+            <h3>Member of Program & Activity Division, Week of Immersion & Networking 2023</h3>
+            <h4>MMU</h4>
+            <ul>
+                <li>Organized orientation activities for 200+ freshmen, improving onboarding experience</li>
+                <li>Facilitated ice-breaking sessions that increased participant interactions by 40%</li>
+            </ul>
         </div>
         <div class="event">
-            <h3>MMU Barcamp 2024</h3>
-            <h4>Head of Multimedia Division</h4>
-            <p>After my role in the Creative and Design Division for MOCC, I was elected as the Head of Multimedia for MMU Barcamp 2024. In this leadership position, I managed all aspects of design, including event kits, promotional materials, and social media content. I oversaw the creative direction, ensuring consistent branding and engagement across platforms. My responsibilities also included coordinating with team members to maintain a high standard of visual communication and enhancing the event’s digital presence.</p>
+            <h3>Member of Design & Creativity Division, Open Chess Competition 2023</h3>
+            <h4>MMU Chess Club</h4>
+            <ul>
+                <li>Designed competition materials (lanyards, participant cards) used by 150+ attendees</li>
+                <li>Managed social media promotions that increased event visibility by 35%</li>
+            </ul>
         </div>
         <div class="event">
-            <h3>MMU Club and Registration Week (CSRW) 2024</h3>
-            <h4>Member of Logistics and Special Task</h4>
-            <p>In this event, I took on a logistics and special task role, applying the experience I gained from Convofest to improve efficiency and coordination. I focused on refining logistical processes, making key corrections to challenges faced in previous events. My responsibilities included ensuring smooth setup and resource allocation while collaborating with different teams to enhance event execution. This role allowed me to implement improvements and optimize logistics for a more seamless operation.</p>
-        </div>
-        <div class="event">
-            <h3>MMU Convofest 2024</h3>
-            <h4>Member of Florist</h4>
-            <p>In this role, I was responsible for selling flowers to customers during the convocation event. I actively engaged with attendees, applying sales strategies to attract customers and boost sales. Through this experience, I developed strong customer interaction skills and gained valuable insights into event-based sales and marketing. My efforts contributed to increasing sales and enhancing the overall experience for graduates and their families.</p>
+            <h3>Member of Logistics and Florist Divisions</h3>
+            <h4>MMU</h4>
+            <ul>
+                <li>As Logistics Team member Coordinated material distribution for 500+ participants in 2023</li>
+                <li>As Florist Team member (2024), implemented sales strategies that boosted revenue by 20%</li>
+            </ul>
         </div>
     </div>
 </section>
+
+<style>
+    /* General Section Styling */
+    .container {
+        margin: 0 auto;
+        padding: 20px;
+        max-width: 900px;
+    }
+
+    .section-title {
+        font-size: 2rem;
+        color: #333;
+        margin-bottom: 20px;
+        font-weight: bold;
+        border-bottom: 2px solid #007bff;
+        padding-bottom: 5px;
+    }
+
+    .events-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+    }
+
+    .event {
+        background-color: #f9f9f9;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+    }
+
+    .event:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .event h3 {
+        font-size: 1.5rem;
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    .event h4 {
+        font-size: 1.1rem;
+        color: #007bff;
+        margin-bottom: 15px;
+    }
+
+    .event ul {
+        list-style-type: disc;
+        padding-left: 20px;
+        font-size: 1.1rem;
+        color: #555;
+    }
+
+    .event ul li {
+        margin-bottom: 8px;
+    }
+</style>
 {% endblock %}

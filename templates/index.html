@@ -2,17 +2,198 @@
 
 {% block content %}
 <section id="about" class="container">
-    <h2>About Me</h2>
+    <h2 class="section-title">About Me</h2>
     <div class="about-content">
         <img src="{{ url_for('static', filename='myimage.jpg') }}" alt="Shahrizal Samsudeen" class="profile-img">
         <p>
-          Hi, I'm Shahrizal Samsudeen, An enthusiastic second-year computer science student eager to expand his knowledge of data science, machine
-          learning, and data-driven decision-making. A fast learner and natural leader, consistently taking the initiative in
-          group projects and team collaborations. Strong foundation in Python, MySQL, and analytical problem-solving,
-          with a passion for extracting insights from data, optimizing algorithms, and applying statistical techniques to real-
-          world challenges. Quick to adapt and eager to contribute to the industry by leveraging data to drive innovation
-          and informed decision making.
+            Hi, I'm Shahrizal Samsudeen, an enthusiastic second-year computer science student eager to expand my knowledge of data science, machine learning, and data-driven decision-making. A fast learner and natural leader, I consistently take the initiative in group projects and team collaborations. I have a strong foundation in Python, MySQL, and analytical problem-solving, with a passion for extracting insights from data, optimizing algorithms, and applying statistical techniques to real-world challenges. Quick to adapt and eager to contribute to the industry by leveraging data to drive innovation and informed decision-making.
         </p>
-      </div>
+    </div>
 </section>
+
+<section id="skills" class="container">
+    <h3 class="section-title">Technical Skills</h3>
+    <div class="skills-list">
+        <div class="skill">
+            <h4>Programming Languages</h4>
+            <p>Python, Java, C++, HTML/CSS</p>
+        </div>
+        <div class="skill">
+            <h4>Database Management</h4>
+            <p>PostgreSQL, SQLAlchemy</p>
+        </div>
+        <div class="skill">
+            <h4>Data Science & Machine Learning</h4>
+            <p>Pandas, NumPy, R, Matplotlib</p>
+        </div>
+        <div class="skill">
+            <h4>Web Development</h4>
+            <p>Flask</p>
+        </div>
+        <div class="skill">
+            <h4>Tools & Platforms</h4>
+            <p>Git, Figma, Canva, Excel, Microsoft Office</p>
+        </div>
+    </div>
+    <a href="/skills" class="btn-more">More</a> <!-- More button for Skills -->
+</section>
+
+<section id="education" class="container">
+    <h3 class="section-title">Education</h3>
+    <div class="education-list">
+        <div class="education-item">
+            <h4>Multimedia University</h4>
+            <p>Bachelor of Computer Science (Second Year)</p>
+            <p>2022 - Present</p>
+        </div>
+        <div class="education-item">
+            <h4>SMK Subang Utama</h4>
+            <p>Science Stream</p>
+            <p>2017 - 2022</p>
+        </div>
+    </div>
+</section>
+
+<section id="projects" class="container">
+    <h3 class="section-title">Selected Projects</h3>
+    <div class="projects-list">
+        <div class="project">
+            <h4>Trash and Treasure (Mini Shopee)</h4>
+            <p>A web-based marketplace for buying and selling second-hand items. Built with Python, MySQL, HTML, and CSS.</p>
+        </div>
+        <div class="project">
+            <h4>Rock Paper Scissors Game</h4>
+            <p>An interactive Python game with CSV-based score tracking and a simple web interface. Built with Python, HTML, and CSS.</p>
+        </div>
+        <div class="project">
+            <h4>CPU Scheduler System</h4>
+            <p>Simulated CPU scheduling algorithms with a Python-based visualization tool. Built with Python, HTML, and CSS.</p>
+        </div>
+        <div class="project">
+            <h4>Movie Recommender System</h4>
+            <p>Building a machine learning-based recommender using Pandas, NumPy, and Python to suggest movies based on user input.</p>
+        </div>
+    </div>
+    <a href="/projects" class="btn-more">More</a> <!-- More button for Projects -->
+</section>
+
+<section id="goals" class="container">
+    <h3 class="section-title">Goals & Aspirations</h3>
+    <p>
+        My goal is to continue expanding my knowledge in the field of data science and machine learning, with a focus on real-world applications that can create a positive impact. I aim to work in a collaborative environment where I can contribute to innovative projects that leverage data to solve complex problems. I am particularly interested in pursuing a career in AI and machine learning, and I hope to contribute to cutting-edge research or work with organizations that prioritize data-driven decision-making.
+    </p>
+</section>
+
+<section id="achievements" class="container">
+    <h3 class="section-title">Licenses & Certifications</h3>
+    <div class="achievement-list">
+        <div class="achievement-item">
+            <h4>AI For MY Future</h4>
+            <p>Issued by Bersama Malaysia: Microsoft AI For All (Mar 2025)</p>
+        </div>
+        <div class="achievement-item">
+            <h4>Data Science Foundations: Fundamentals</h4>
+            <p>Issued by LinkedIn (Mar 2025)</p>
+        </div>
+        <div class="achievement-item">
+            <h4>ICDL Documents</h4>
+            <p>Issued by ICDL Asia (Mar 2025)</p>
+        </div>
+        <div class="achievement-item">
+            <h4>ICDL Spreadsheets</h4>
+            <p>Issued by ICDL Asia (Mar 2025)</p>
+        </div>
+        <div class="achievement-item">
+            <h4>ICDL Teamwork</h4>
+            <p>Issued by ICDL Asia (Mar 2025)</p>
+        </div>
+        <div class="achievement-item">
+            <h4>Introduction to Data Science</h4>
+            <p>Issued by LinkedIn (Mar 2025)</p>
+        </div>
+        <div class="achievement-item">
+            <h4>Learning Excel Desktop (Microsoft 365)</h4>
+            <p>Issued by LinkedIn (Mar 2025)</p>
+        </div>
+        <div class="achievement-item">
+            <h4>Python 101 for Data Science</h4>
+            <p>Issued by Cognitive Class (Mar 2025)</p>
+        </div>
+        <div class="achievement-item">
+            <h4>Malaysian University English Test (MUET)</h4>
+            <p>Issued by Malaysian Examination Council (Sep 2023, expires Sep 2028)</p>
+        </div>
+    </div>
+    <a href="/achievements" class="btn-more">More</a> <!-- More button for Achievements -->
+</section>
+
+
+<section id="interests" class="container">
+    <h3 class="section-title">Personal Interests</h3>
+    <p>
+        Outside of academics, I enjoy playing chess, exploring new technologies. I am also passionate about photography and graphic design, which allows me to express creativity alongside my technical interests. Staying active through sports and fitness is important to me as it helps maintain balance and discipline in my life.
+    </p>
+</section>
+
+<style>
+    /* General Section Styling */
+    .container {
+        margin: 0 auto;
+        padding: 20px;
+        max-width: 900px;
+    }
+
+    .section-title {
+        font-size: 2rem;
+        color: #333;
+        margin-bottom: 20px;
+        font-weight: bold;
+        border-bottom: 2px solid #007bff;
+        padding-bottom: 5px;
+    }
+
+    .profile-img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 20px;
+    }
+
+    .skills-list, .projects-list, .achievement-list, .education-list, .experience-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+    }
+
+    .skill, .project, .achievement-item, .education-item, .experience-item {
+        background-color: #f9f9f9;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+    }
+
+    .skill:hover, .project:hover, .achievement-item:hover, .education-item:hover, .experience-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn-more {
+        display: inline-block;
+        padding: 10px 20px;
+        margin-top: 20px;
+        background-color: #007BFF;
+        color: #fff;
+        text-align: center;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn-more:hover {
+        background-color: #0056b3;
+    }
+</style>
+
 {% endblock %}

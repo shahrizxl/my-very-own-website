@@ -18,6 +18,14 @@ def skills():
 def projects():
     return render_template('projects.html')
 
+@app.route('/achievements')
+def achievements():
+    return render_template('achievements.html')
+
+@app.route('/experience')
+def experience():
+    return render_template('experience.html')
+
 @app.route('/events')
 def events():
     return render_template('events.html')

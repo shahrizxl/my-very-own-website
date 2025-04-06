@@ -1,21 +1,104 @@
 {% extends "base.html" %}
 
 {% block content %}
-<section id="events" class="container">
-    <h2>Skills</h2>
-    <div class="events-list">
-        <div class="event">
-            <h3>Technical Skills</h3>
-            <p>Python, MySQL, Flask, Pandas, Numpy, Matplotlib, HTML and CSS, LaTeX, and Microsoft Office.</p>
+<section id="skills" class="container">
+    <h2 class="section-title">Technical Skills</h2>
+    <div class="skills-list">
+        <div class="skill-category">
+            <h4>Programming Languages</h4>
+            <p>Python, Java, C++, HTML/CSS</p>
         </div>
-        <div class="event">
-            <h3>Soft Skills</h3>
-            <p>Self-management, Teamwork, Leadership, Attention to detail, Critical thinking, Project management, and Time management.</p>
+        <div class="skill-category">
+            <h4>Database Management</h4>
+            <p>PostgreSQL, SQLAlchemy</p>
         </div>
-        <div class="event">
-            <h3>Other Skills</h3>
-            <p>Canva, CapCut, and Figma.</p>
+        <div class="skill-category">
+            <h4>Data Science & Machine Learning</h4>
+            <p>Pandas, NumPy, R, Matplotlib</p>
         </div>
+        <div class="skill-category">
+            <h4>Web Development</h4>
+            <p>Flask</p>
+        </div>
+        <div class="skill-category">
+            <h4>Tools & Platforms</h4>
+            <p>Git, Figma, Canva, Excel, Microsoft Office</p>
+        </div>
+
     </div>
+    <h2 class="section-title">Soft Skills</h2>
+    <div class="skills-list">
+        <div class="skill-category">
+            <h4>Soft Skills</h4>
+            <p>Self-management, Teamwork, Leadership, Attention to detail, Critical thinking, Project manage-
+            ment, and Time management.</p>
+        </div>
+
+    </div>
+
 </section>
+
+<style>
+    /* General Section Styling */
+    .container {
+        margin: 0 auto;
+        padding: 20px;
+        max-width: 900px;
+    }
+
+    .section-title {
+        font-size: 2rem;
+        color: #333;
+        margin-bottom: 20px;
+        font-weight: bold;
+        border-bottom: 2px solid #007bff;
+        padding-bottom: 5px;
+    }
+
+    .skills-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+    }
+
+    .skill-category {
+        background-color: #f9f9f9;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+    }
+
+    .skill-category:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .skill-category h4 {
+        font-size: 1.5rem;
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    .skill-category p {
+        font-size: 1.1rem;
+        color: #555;
+    }
+
+    .btn-more {
+        display: inline-block;
+        padding: 10px 20px;
+        margin-top: 20px;
+        background-color: #007BFF;
+        color: #fff;
+        text-align: center;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn-more:hover {
+        background-color: #0056b3;
+    }
+</style>
 {% endblock %}
